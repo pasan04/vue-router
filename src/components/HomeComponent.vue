@@ -2,12 +2,18 @@
   <div class="hello">
     <h1>HOME</h1>
     <p>This is home page.</p>
+    <button @click="confirmInput" style="height: 60px; width:120px; color: brown;">Change Route</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HomeComponent',
+  methods:{
+    confirmInput(){
+      this.$router.push("/about");
+    }
+  }
 }
 </script>
 
