@@ -5,6 +5,20 @@
 
 export default {
   name: 'App',
+  data(){
+    return{
+      teams:[
+        { id: 'T1', name: 'Quality Assurance Engineers' },
+        { id: 'T2', name: 'Software Engineers' },
+        { id: 'T3', name: 'Techanical Leads' },
+      ]
+    };
+  },
+  provide(){
+    return{
+      teams: this.teams
+    }
+  }
 }
 </script>
 
