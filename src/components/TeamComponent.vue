@@ -17,9 +17,9 @@ export default {
     };
   },
   created(){
-    console.log(this.id);
     const teamId = this.id;
-    this.selectedTeam = this.teams.find( team=> team.id === teamId)
+    this.selectedTeam = this.teams.find( team=> team.id === teamId);
+    console.log(this.$route.query);
   }
 }
 </script>
